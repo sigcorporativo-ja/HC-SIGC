@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE urlrewrite
+    PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+    "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<urlrewrite>
+   <rule match-type="regex">
+      <name>Client Routes</name>
+      <note>For all routes that are not file requests, forward to
+         index.html.</note>
+      <condition type="request-uri" operator="notequal">^.+\/api\/?.*$</condition>
+      <condition type="request-uri" operator="notequal">.+.js$</condition>
+      <from>^\/([/\-\w]+)$</from>
+      <to type="forward" last="true">/index.html</to>
+   </rule>
+</urlrewrite>

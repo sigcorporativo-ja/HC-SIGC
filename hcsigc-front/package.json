@@ -1,0 +1,37 @@
+{
+  "name": "hcsigc-front",
+  "homepage": "/hcsigc",
+  "version": "1.0.0-SNAPSHOT",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.3.1",
+    "@material-ui/icons": "^1.1.0",
+    "autosuggest-highlight": "^3.1.1",
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "chartist": "^0.10.1",
+    "i18next": "^11.3.6",
+    "i18next-browser-languagedetector": "^2.2.2",
+    "jwt-decode": "^2.2.0",
+    "material-ui": "^0.20.2",
+    "react": "^16.4.1",
+    "react-autosuggest": "^9.4.2",
+    "react-chartist": "^0.13.1",
+    "react-dom": "^16.4.1",
+    "react-i18next": "^7.9.0",
+    "react-images-upload": "^1.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-select": "^2.1.1",
+    "react-star-ratings": "^2.3.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "scripts": {
+    "start": "NODE_PATH=src/ REACT_APP_CONFIG_URL='http://localhost:8080/hcsigc/hcsigc-front-configuration.js' react-scripts start",
+    "build": "NODE_PATH=src/ REACT_APP_CONFIG_URL='/hcsigc/hcsigc-front-configuration.js' react-scripts build",
+    "test": "NODE_PATH=src/ react-scripts test --env=jsdom",
+    "eject": "NODE_PATH=src/ react-scripts eject"
+  }
+}

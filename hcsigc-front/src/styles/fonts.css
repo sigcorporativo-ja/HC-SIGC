@@ -1,0 +1,667 @@
+@font-face {
+  font-family: "Raleway Webfont";
+  src: url('../static/fonts/raleway/raleway-thin.eot');
+  src: url('../static/fonts/raleway/raleway-thin.eot?#iefix') format('embedded-opentype'), url('../static/fonts/raleway/raleway-thin.woff') format('woff'), url('../static/fonts/raleway/raleway-thin.ttf') format('truetype'), url('../static/fonts/raleway/raleway-thin.svg#ralewaythin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway Webfont";
+  src: url('../static/fonts/raleway/raleway-extralight.eot');
+  src: url('../static/fonts/raleway/raleway-extralight.eot?#iefix') format('embedded-opentype'), url('../static/fonts/raleway/raleway-extralight.woff') format('woff'), url('../static/fonts/raleway/raleway-extralight.ttf') format('truetype'), url('../static/fonts/raleway/raleway-extralight.svg#ralewayextralight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway Webfont";
+  src: url('../static/fonts/raleway/raleway-light.eot');
+  src: url('../static/fonts/raleway/raleway-light.eot?#iefix') format('embedded-opentype'), url('../static/fonts/raleway/raleway-light.woff') format('woff'), url('../static/fonts/raleway/raleway-light.ttf') format('truetype'), url('../static/fonts/raleway/raleway-light.svg#ralewaylight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway Webfont";
+  src: url('../static/fonts/raleway/raleway-regular.eot');
+  src: url('../static/fonts/raleway/raleway-regular.eot?#iefix') format('embedded-opentype'), url('../static/fonts/raleway/raleway-regular.woff') format('woff'), url('../static/fonts/raleway/raleway-regular.ttf') format('truetype'), url('../static/fonts/raleway/raleway-regular.svg#ralewayregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway Webfont";
+  src: url('../static/fonts/raleway/raleway-medium.eot');
+  src: url('../static/fonts/raleway/raleway-medium.eot?#iefix') format('embedded-opentype'), url('../static/fonts/raleway/raleway-medium.woff') format('woff'), url('../static/fonts/raleway/raleway-medium.ttf') format('truetype'), url('../static/fonts/raleway/raleway-medium.svg#ralewaymedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway Webfont";
+  src: url('../static/fonts/raleway/raleway-semibold.eot');
+  src: url('../static/fonts/raleway/raleway-semibold.eot?#iefix') format('embedded-opentype'), url('../static/fonts/raleway/raleway-semibold.woff') format('woff'), url('../static/fonts/raleway/raleway-semibold.ttf') format('truetype'), url('../static/fonts/raleway/raleway-semibold.svg#ralewaysemibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway Webfont";
+  src: url('../static/fonts/raleway/raleway-bold.eot');
+  src: url('../static/fonts/raleway/raleway-bold.eot?#iefix') format('embedded-opentype'), url('../static/fonts/raleway/raleway-bold.woff') format('woff'), url('../static/fonts/raleway/raleway-bold.ttf') format('truetype'), url('../static/fonts/raleway/raleway-bold.svg#ralewaybold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway Webfont";
+  src: url('../static/fonts/raleway/raleway-extrabold.eot');
+  src: url('../static/fonts/raleway/raleway-extrabold.eot?#iefix') format('embedded-opentype'), url('../static/fonts/raleway/raleway-extrabold.woff') format('woff'), url('../static/fonts/raleway/raleway-extrabold.ttf') format('truetype'), url('../static/fonts/raleway/raleway-extrabold.svg#ralewayextrabold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway Webfont";
+  src: url('../static/fonts/raleway/raleway-heavy.eot');
+  src: url('../static/fonts/raleway/raleway-heavy.eot?#iefix') format('embedded-opentype'), url('../static/fonts/raleway/raleway-heavy.woff') format('woff'), url('../static/fonts/raleway/raleway-heavy.ttf') format('truetype'), url('../static/fonts/raleway/raleway-heavy.svg#ralewayheavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v38/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'gt-icons';
+  src: url('../static/fonts/icons/icons.eot?ly8i2l');
+  src: url('../static/fonts/icons/icons.eot?ly8i2l#iefix') format('embedded-opentype'), url('../static/fonts/icons/icons.ttf?ly8i2l') format('truetype'), url('../static/fonts/icons/icons.woff?ly8i2l') format('woff'), url('../static/fonts/icons/icons.svg?ly8i2l#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'gt-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-accesibility:before {
+  content: "\e900";
+}
+
+.icon-around:before {
+  content: "\e901";
+}
+
+.icon-around-o:before {
+  content: "\e902";
+}
+
+.icon-arrow:before {
+  content: "\e903";
+}
+
+.icon-arrow-down:before {
+  content: "\e904";
+}
+
+.icon-arrow-down-o:before {
+  content: "\e905";
+}
+
+.icon-arrow-up:before {
+  content: "\e906";
+}
+
+.icon-avatar:before {
+  content: "\e907";
+}
+
+.icon-beach:before {
+  content: "\e908";
+}
+
+.icon-blog:before {
+  content: "\e909";
+}
+
+.icon-briefcase:before {
+  content: "\e90a";
+}
+
+.icon-building:before {
+  content: "\e90b";
+}
+
+.icon-calendar:before {
+  content: "\e90c";
+}
+
+.icon-camera:before {
+  content: "\e90d";
+}
+
+.icon-camera2:before {
+  content: "\e90e";
+}
+
+.icon-check:before {
+  content: "\e90f";
+}
+
+.icon-clock:before {
+  content: "\e910";
+}
+
+.icon-column:before {
+  content: "\e911";
+}
+
+.icon-compass:before {
+  content: "\e912";
+}
+
+.icon-copy:before {
+  content: "\e913";
+}
+
+.icon-cross:before {
+  content: "\e914";
+}
+
+.icon-cross2:before {
+  content: "\e915";
+}
+
+.icon-cuisine-type:before {
+  content: "\e916";
+}
+
+.icon-direction:before {
+  content: "\e917";
+}
+
+.icon-facebook:before {
+  content: "\e918";
+}
+
+.icon-fax:before {
+  content: "\e919";
+}
+
+.icon-ferris-wheel:before {
+  content: "\e91a";
+}
+
+.icon-flag:before {
+  content: "\e91b";
+}
+
+.icon-flag2:before {
+  content: "\e91c";
+}
+
+.icon-flickr:before {
+  content: "\e91d";
+}
+
+.icon-go:before {
+  content: "\e91e";
+}
+
+.icon-go-o:before {
+  content: "\e91f";
+}
+
+.icon-gps:before {
+  content: "\e920";
+}
+
+.icon-heart:before {
+  content: "\e921";
+}
+
+.icon-info-o:before {
+  content: "\e922";
+}
+
+.icon-infraestructures:before {
+  content: "\e923";
+}
+
+.icon-itinerary:before {
+  content: "\e924";
+}
+
+.icon-itinerary2:before {
+  content: "\e925";
+}
+
+.icon-key:before {
+  content: "\e926";
+}
+
+.icon-label:before {
+  content: "\e927";
+}
+
+.icon-left-arrow:before {
+  content: "\e928";
+}
+
+.icon-light:before {
+  content: "\e929";
+}
+
+.icon-link:before {
+  content: "\e92a";
+}
+
+.icon-link2:before {
+  content: "\e92b";
+}
+
+.icon-mail:before {
+  content: "\e92c";
+}
+
+.icon-mail2:before {
+  content: "\e92d";
+}
+
+.icon-map:before {
+  content: "\e92e";
+}
+
+.icon-marker:before {
+  content: "\e92f";
+}
+
+.icon-maximize:before {
+  content: "\e930";
+}
+
+.icon-medal:before {
+  content: "\e931";
+}
+
+.icon-menu:before {
+  content: "\e932";
+}
+
+.icon-minimize:before {
+  content: "\e933";
+}
+
+.icon-minus:before {
+  content: "\e934";
+}
+
+.icon-minus-o:before {
+  content: "\e935";
+}
+
+.icon-minus-o-black:before {
+  content: "\e936";
+}
+
+.icon-near:before {
+  content: "\e937";
+}
+
+.icon-note:before {
+  content: "\e938";
+}
+
+.icon-pencil:before {
+  content: "\e939";
+}
+
+.icon-phone:before {
+  content: "\e93a";
+}
+
+.icon-picture:before {
+  content: "\e93b";
+}
+
+.icon-pin:before {
+  content: "\e93c";
+}
+
+.icon-pin2:before {
+  content: "\e93d";
+}
+
+.icon-pinterest:before {
+  content: "\e93e";
+}
+
+.icon-places:before {
+  content: "\e93f";
+}
+
+.icon-plus:before {
+  content: "\e940";
+}
+
+.icon-plus-o:before {
+  content: "\e941";
+}
+
+.icon-plus-o-black:before {
+  content: "\e942";
+}
+
+.icon-point:before {
+  content: "\e943";
+}
+
+.icon-pointer:before {
+  content: "\e944";
+}
+
+.icon-printer:before {
+  content: "\e945";
+}
+
+.icon-public:before {
+  content: "\e946";
+}
+
+.icon-refresh:before {
+  content: "\e947";
+}
+
+.icon-restore:before {
+  content: "\e948";
+}
+
+.icon-right-arrow:before {
+  content: "\e949";
+}
+
+.icon-ruler:before {
+  content: "\e94a";
+}
+
+.icon-search:before {
+  content: "\e94b";
+}
+
+.icon-segments:before {
+  content: "\e94c";
+}
+
+.icon-share:before {
+  content: "\e94d";
+}
+
+.icon-share-o-black:before {
+  content: "\e94e";
+}
+
+.icon-spa:before {
+  content: "\e94f";
+}
+
+.icon-speciality:before {
+  content: "\e950";
+}
+
+.icon-squares:before {
+  content: "\e951";
+}
+
+.icon-star:before {
+  content: "\e952";
+}
+
+.icon-star2:before {
+  content: "\e953";
+}
+
+.icon-street-view:before {
+  content: "\e954";
+}
+
+.icon-street-view-o-black:before {
+  content: "\e955";
+}
+
+.icon-tag:before {
+  content: "\e956";
+}
+
+.icon-telephone:before {
+  content: "\e957";
+}
+
+.icon-territory:before {
+  content: "\e958";
+}
+
+.icon-ticket:before {
+  content: "\e959";
+}
+
+.icon-tools:before {
+  content: "\e95a";
+}
+
+.icon-treatment:before {
+  content: "\e95b";
+}
+
+.icon-twitter:before {
+  content: "\e95c";
+}
+
+.icon-type-segcultura:before {
+  content: "\e95d";
+}
+
+.icon-type-segdeporte:before {
+  content: "\e95e";
+}
+
+.icon-type-seggastrono:before {
+  content: "\e95f";
+}
+
+.icon-type-segnat:before {
+  content: "\e960";
+}
+
+.icon-type-segociodiv:before {
+  content: "\e961";
+}
+
+.icon-type-segreuncong:before {
+  content: "\e962";
+}
+
+.icon-type-segsalbel:before {
+  content: "\e963";
+}
+
+.icon-type-segsolplay:before {
+  content: "\e964";
+}
+
+.icon-type-tippubamigo:before {
+  content: "\e965";
+}
+
+.icon-type-tippubfam:before {
+  content: "\e966";
+}
+
+.icon-type-tippubjoven:before {
+  content: "\e967";
+}
+
+.icon-type-tippublgtb:before {
+  content: "\e968";
+}
+
+.icon-type-tippubmayor:before {
+  content: "\e969";
+}
+
+.icon-type-tippubneg:before {
+  content: "\e96a";
+}
+
+.icon-type-tippubpareja:before {
+  content: "\e96b";
+}
+
+.icon-type-tippubprof:before {
+  content: "\e96c";
+}
+
+.icon-type-tippubviajosolo:before {
+  content: "\e96d";
+}
+
+.icon-type-tiprecactgui:before {
+  content: "\e96e";
+}
+
+.icon-type-tiprecagevia:before {
+  content: "\e96f";
+}
+
+.icon-type-tiprecalojam:before {
+  content: "\e970";
+}
+
+.icon-type-tiprecareanatural:before {
+  content: "\e971";
+}
+
+.icon-type-tipreccompra:before {
+  content: "\e972";
+}
+
+.icon-type-tiprecconvcong:before {
+  content: "\e973";
+}
+
+.icon-type-tiprecdeporte:before {
+  content: "\e974";
+}
+
+.icon-type-tiprecescesp:before {
+  content: "\e975";
+}
+
+.icon-type-tiprecevento:before {
+  content: "\e976";
+}
+
+.icon-type-tiprecflamenco:before {
+  content: "\e977";
+}
+
+.icon-type-tiprecgolf:before {
+  content: "\e978";
+}
+
+.icon-type-tiprecocionocturno:before {
+  content: "\e979";
+}
+
+.icon-type-tiprecoferta:before {
+  content: "\e97a";
+}
+
+.icon-type-tiprecotrcom:before {
+  content: "\e97b";
+}
+
+.icon-type-tiprecparquesocio:before {
+  content: "\e97c";
+}
+
+.icon-type-tiprecplaya:before {
+  content: "\e97d";
+}
+
+.icon-type-tiprecrestaur:before {
+  content: "\e97e";
+}
+
+.icon-type-tiprecrutaturis:before {
+  content: "\e97f";
+}
+
+.icon-type-tiprecsaludbelleza:before {
+  content: "\e980";
+}
+
+.icon-type-tiprecsendero:before {
+  content: "\e981";
+}
+
+.icon-type-tiprecservinf:before {
+  content: "\e982";
+}
+
+.icon-type-tiprectransporte:before {
+  content: "\e983";
+}
+
+.icon-type-tiprecvisita:before {
+  content: "\e984";
+}
+
+.icon-video-camara:before {
+  content: "\e985";
+}
+
+.icon-water:before {
+  content: "\e986";
+}
+
+.icon-wifi:before {
+  content: "\e987";
+}
+
+.icon-youtube:before {
+  content: "\e988";
+}
+
+.icon-flag2:before {
+  content: "\e91c";
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+	<persistence-unit name="hcsigc" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+		<jta-data-source>${hcsigc.datasource.jndi}</jta-data-source>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.Configuration</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.DBConnection</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.DBMS</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.Dataset</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.Group</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.GroupUser</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.OrganizationUnit</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.Permission</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.RemoteConnection</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.RemoteParameter</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.Role</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.StatisticAccess</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.SuperclassDomain</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.User</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.UserOUPermission</class>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.DataType</class>
+
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.show_sql"
+				value="${persistence.showSql}" />
+			<property name="hibernate.hbm2ddl.auto"
+				value="${persistence.hbm2ddl}" />
+			<property name="javax.persistence.sql-load-script-source"
+				value="META-INF/init_db.sql" />
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="hcsigc_data" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+		<jta-data-source>${hcsigc.datasource_data.jndi}</jta-data-source>
+		<class>es.juntadeandalucia.sigc.hc.persistence.entity.TempTableRegistry</class>
+
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.show_sql"
+				value="${persistence_data.showSql}" />
+			<property name="hibernate.hbm2ddl.auto"
+				value="${persistence_data.hbm2ddl}" />
+		</properties>
+	</persistence-unit>
+
+</persistence>
